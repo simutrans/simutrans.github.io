@@ -23,7 +23,10 @@ add_ironbite_timeline_data(events);
 // Configuration for the Timeline
 const options = {
   editable: false,
-  stack: false,
+  stack: true,
+  verticalScroll: true,
+  height: '80vh',
+  maxHeight: '80vh',
 };
 
 // Create a Timeline
