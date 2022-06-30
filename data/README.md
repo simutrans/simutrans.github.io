@@ -1,6 +1,6 @@
 # Adding new events
 
-You can add new events to the Simutrans Timeline by editing the *.js files located in this repository. You can do this directly within 's web interface, by opening the file and then clicking "Edit this file" button (pencil icon).
+You can add new events to the Simutrans Timeline by editing the *.js files located in this repository. You can do this directly within GitHub's web interface, by opening the file and then clicking "Edit this file" button (pencil icon).
 - Simutrans (Standard) events are in [standard.js](./standard.js).
 - Simutrans Extended events are in [extended.js](./extended.js).
 - Simutrans OTRP events are in [otrp.js](./otrp.js).
@@ -15,7 +15,7 @@ There are four types of events:
 ## Example
 Adding events is easy. Let's see it with an example. Suppose You are a 'standard' contributor that wants to add the date you joined.
 1. Open [standard.js](./standard.js)
-2. Go to the ``List of contributors events`` section (you can do CTRL+F to fin it). You will see a code with a list like this:
+2. Go to the ``List of contributors events`` section (you can do CTRL+F to find it). You will see a code with a list like this:
 ```
 // List of contributors events
 const add_standard_contributors = (events) => {
