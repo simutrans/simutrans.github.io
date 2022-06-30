@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Simutrans Timeline</title>
+  <script   
+    type="text/javascript"
+    src="https://unpkg.com/vis-timeline@latest/standalone/umd/vis-timeline-graph2d.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div style="display: flex; align-items:center;">
+    <img src="https://www.simutrans.com/images/resources/simutrans-no-typography.svg" height="50px"/>
+    <h1 style="margin-bottom: 5px">Simutrans Timeline</h1>
+  </div>
+  <p>Welcome to the Simutrans Timeline! You can move around, zoom and click events on the timeline.</p>
+  <div style="display:flex;">
+    Show / Hide:
+    <label class="checkbox-container"> Milestones
+      <input type="checkbox" checked onclick="toggleSubgroupVisibility('milestone')">
+      <span class="checkbox checkbox-milestone"></span>
+    </label>
+    <label class="checkbox-container"> Releases
+      <input type="checkbox" checked onclick="toggleSubgroupVisibility('release')">
+      <span class="checkbox checkbox-release"></span>
+    </label>
+    <label class="checkbox-container"> Contributors
+      <input type="checkbox" checked onclick="toggleSubgroupVisibility('contributor')">
+      <span class="checkbox checkbox-contributor"></span>
+    </label>
+    <label class="checkbox-container"> Paksets
+      <input type="checkbox" checked onclick="toggleSubgroupVisibility('pakset')">
+      <span class="checkbox checkbox-pakset"></span>
+    </label>
+    <button class="stack-button" onclick="toggleStacking()">Toggle stacking</button>
+  </div>
+  <div id="timeline"></div>
+
+  <script type="text/javascript" src="data/standard.js"></script>
+  <script type="text/javascript" src="data/extended.js"></script>
+  <script type="text/javascript" src="data/otrp.js"></script>
+  <script type="text/javascript" src="data/ironbite.js"></script>
+  <script type="text/javascript" src="./index.js"></script>
+</body>
+</html>
