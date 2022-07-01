@@ -70,6 +70,7 @@ const add_standard_paksets = (events) => {
     {start: '2004-11-25', content: 'pak64.Japan start'},
     {start: '2006-06-23', content: 'pak128.Japan start'},
     {start: '2007-04-10', content: 'pak128.Britain start'},
+    {start: '2008-03-18', content: 'pak96.comic start'},
     {start: '2009-02-14', content: 'Pak192.Comic start'},
     {start: '2018-12-28', content: 'PAK128.German 1.0'},
     {start: '2020-10-21', content: 'PAK128.German 2.0'},
