@@ -46,3 +46,29 @@ const toggleSubgroupVisibility = (subgroup) => {
   groups.get('otrp').subgroupVisibility[subgroup] = !groups.get('otrp').subgroupVisibility[subgroup];
   timeline.setGroups(groups);
 }
+
+/*
+ * Showing source information
+ */
+timeline.on('select', function (properties) {
+  const previous_details = document.getElementById('details');
+  if( previous_details ) previous_details.remove();
+  selected_event = events.get(properties.items[0]);
+  if ( selected_event.content !== undefined) {
+    const details = document.createElement('div');
+    details.id = 'details';
+    details.innerHTML = '<center><h3>Event Details</h3></center>';
+    details.innerHTML += 'Content: ' + selected_event.content.replace(/<img[^>]*>/g,"").replace(/<br[^>]*>/g, ' ') + '</br>';
+    details.innerHTML += 'Date: ' + selected_event.start + '</br>';
+
+    if ( selected_event.source_name && selected_event.source_url ) {
+      details.innerHTML += 'Source: <a href= "' + selected_event.source_url + '">' + selected_event.source_name + '</a>';
+    } else if ( selected_event.source_url ) {
+      details.innerHTML += 'Source: <a href= "' + selected_event.source_url + '">' + selected_event.source_url + '</a>';
+    } else if ( selected_event.name_url ){
+      details.innerHTML += 'Source: ' + selected_event.source_name; 
+    }
+
+    document.getElementById('timeline').appendChild(details)
+  }
+});

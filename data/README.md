@@ -42,7 +42,7 @@ const add_standard_contributors = (events) => {
 ```
   const short_events = [
     {start: '2009-07-29', content: "Ters joins"},
-    {start: '2010-01-30', content: "<img src='my_avatar_url' /><br>I JOINED HERE", source_name: 'Simutrans International Forum', source_url: "https://forum.simutrans.com"},
+    {start: '2010-01-30', content: "<img src='MY_AVATAR_URL' /><br>I JOINED HERE", source_name: 'Simutrans International Forum', source_url: "https://forum.simutrans.com"},
     {start: '2010-02-04', content: "TurfIt joins"},
   ]
 ```
