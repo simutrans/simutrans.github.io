@@ -126,5 +126,5 @@ const add_standard_releases = (events) => {
     {start: '2021-12-30', content: '123'},
     {start: '2022-01-29', content: '123.1'},
   ]
-  short_events.forEach((event) => events.add([{...event, group: 'standard', subgroup: 'release', className: 'release'}]));
+  short_events.forEach((event) => events.add([{...event, group: 'standard', subgroup: 'release', className: 'release', source_name: 'Simutrans history.txt', source_url: "https://github.com/simutrans/simutrans/blob/master/simutrans/history.txt"}]));
 }
