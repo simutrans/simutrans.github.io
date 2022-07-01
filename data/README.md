@@ -36,13 +36,14 @@ const add_standard_contributors = (events) => {
   ]
 ```
 4. Add optional information. You can add:
-- HTML tags inside the "content" field, to include, for example, images.
-- The optional field "source_name" to indicate the source of such information.
-- The optional field "source_url" to indicate the url source of such information (if any).
+- HTML tags inside the "content" field, to include, for example, line breaks (`<br>`).
+- "img_url" field containing a link to a image to be displayed
+- "source_name" field containing the source of the information.
+- "source_url" field containing the url source of the information (if any).
 ```
   const short_events = [
     {start: '2009-07-29', content: "Ters joins"},
-    {start: '2010-01-30', content: "<img src='MY_AVATAR_URL' /><br>I JOINED HERE", source_name: 'Simutrans International Forum', source_url: "https://forum.simutrans.com"},
+    {start: '2010-01-30', content: "I JOINED<br>HERE", img_url="MY_AVATAR_URL.png" source_name: 'Simutrans International Forum', source_url: "https://forum.simutrans.com"},
     {start: '2010-02-04', content: "TurfIt joins"},
   ]
 ```

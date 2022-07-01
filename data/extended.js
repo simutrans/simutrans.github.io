@@ -23,9 +23,9 @@ const add_extendedmilestones = (events) => {
 // List of contributors events
 const add_extended_contributors = (events) => {
   const short_events = [
-    {start: '2008-12-04', content: '<img src="https://forum.simutrans.com/custom_avatar/avatar_53_1470856190.jpg" /><br>Jamespetts starts contributing'},
+    {start: '2008-12-04', content: 'Jamespetts starts contributing', img_url: "https://forum.simutrans.com/custom_avatar/avatar_53_1470856190.jpg"},
 	{start: '2017-07-01', content: 'Phystam joins'},
-	{start: '2018-04-28', content: '<img src="https://forum.simutrans.com/custom_avatar/avatar_11892_1648587872.png" /><br>Ranran joins'},
+	{start: '2018-04-28', content: 'Ranran joins', img_url: "https://forum.simutrans.com/custom_avatar/avatar_11892_1648587872.png"},
 	{start: '2021-04-30', content: 'PJMack joins'},
   ]
   short_events.forEach((event) => events.add([{...event, group: 'extended', subgroup: 'contributor', className:'contributor'}]));
