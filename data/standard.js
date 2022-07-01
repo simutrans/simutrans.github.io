@@ -14,8 +14,12 @@ const add_standard_timeline_data = (events) => {
 // List of milestone events
 const add_standardmilestones = (events) => {
   const short_events = [
-    {start: '1997-06', content: 'Hansjörg Malthaner "Hajo" starts working on Simutrans'},
+    {start: '1997-06', content: 'Hansjörg Malthaner "Hajo" starts working on Simutrans', source_name: "Hajo's simutrans.de (Wayback Machine)", source_url: "http://web.archive.org/web/20010513102245/http://www.simutrans.de/english/simu/history/index.html"},
+    {start: '2001-05-20', content: "Hajo's simutrans.com", source_name: 'Wayback Machine', source_url: 'https://web.archive.org/web/20010606142955/http://www.s-line.de/homepages/simutrans/simutrans/'},
+    {start: '2003-04-02', content: "Simugraph forum", source_name: 'Wayback Machine', source_url: 'https://web.archive.org/web/20030411182703/http://www.simugraph.com/forum/'},
+    {start: '2004-03-12', content: "Isaac's simutrans.com", source_name: 'Wayback Machine', source_url: 'https://web.archive.org/web/20040403095155/http://simutrans.com/'},
     {start: '2005-03-20', content: '86.0 with seasons, pre-signals, trams'},
+    {start: '2005-07-23', content: 'The Simutrans Forum', source_name: 'The Simutrans Forum', source_url: 'https://web.archive.org/web/20051210120640/http://forum.simutrans.com/index.php/board,31.0.html'},
     {start: '2005-11-22', content: '88.0 with airplanes'},
     {start: '2006-06-08', content: '89.0 with path based signals'},
     {start: '2006-10-06', content: '99.0 with climates'},
