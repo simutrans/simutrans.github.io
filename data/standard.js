@@ -66,11 +66,11 @@ const add_non_simutrans = (events) => {
 // List of paksets events
 const add_standard_paksets = (events) => {
   const short_events = [
-    {start: '10-12-2003', content: 'Initial pak128 release'},
-    {start: '25-11-2004', content: 'Initial pak64.Japan release'},
-    {start: '23-06-2006', content: 'Initial pak128.Japan release'},
-    {start: '10-04-2007', content: 'Initial pak128.Britain release'},
-    {start: '2009-02-14', content: 'Initial Pak192.Comic release'},
+    {start: '2003-12-10', content: 'pak128 start'},
+    {start: '2004-11-25', content: 'pak64.Japan start'},
+    {start: '2006-06-23', content: 'pak128.Japan start'},
+    {start: '2007-04-10', content: 'pak128.Britain start'},
+    {start: '2009-02-14', content: 'Pak192.Comic start'},
     {start: '2018-12-28', content: 'PAK128.German 1.0'},
     {start: '2020-10-21', content: 'PAK128.German 2.0'},
   ]
