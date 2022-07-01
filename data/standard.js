@@ -44,7 +44,7 @@ const add_standard_contributors = (events) => {
     {start: '2009-07-29', content: "Ters joins"},
     {start: '2010-02-04', content: "TurfIt joins"},
     {start: '2011-09-23', content: "<img src='https://www.mediafire.com/convkey/807c/aec9av4dc5uicnd6g.jpg' /><br>YonaTYT joins"},
-    {start: '2013-03-25', content: "<img src='https://forum.simutrans.com/custom_avatar/avatar_10123_1543441188.png' /><br>Flemmbrav joins"},
+    {start: '2013-01-13', content: "<img src='https://forum.simutrans.com/custom_avatar/avatar_10123_1543441188.png' /><br>Flemmbrav joins"},
     {start: '2015-12-08', content: "HaydenRead joins"},
     {start: '2019-06-15', content: "<img src='https://avatars.githubusercontent.com/u/15730241?s=40&v=4' /><br>128na starts working on<br>the Simutrans Addon Portal"},
     {start: '2020-10-09', content: "<img src='https://forum.simutrans.com/custom_avatar/avatar_11603_1533905631.png' height='30px' /><br>Roboron takes over<br> Simutrans on Steam"},
