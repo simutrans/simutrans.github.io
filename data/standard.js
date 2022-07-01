@@ -19,16 +19,16 @@ const add_standardmilestones = (events) => {
     {start: '2005-11-22', content: '88.0 with airplanes'},
     {start: '2006-06-08', content: '89.0 with path based signals'},
     {start: '2006-10-06', content: '99.0 with climates'},
-    {start: '2007-05', content: 'Simutrans becomes<br> open source', img_url: "http://assets.stickpng.com/images/58481842cef1014c0b5e49a2.png"},
-    {start: '2008-02-29', content: 'Debian<br>packages<br>Simutrans', img_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Openlogo-debianV2.svg/375px-Openlogo-debianV2.svg.png"},
-    {start: '2008-11-14', content: 'Modern logo', img_url: "https://graphics.simutrans.com/albums/userpics/10003/simutrans-logo.png"},
+    {start: '2007-05', content: 'Simutrans becomes<br> open source', img_url: "http://assets.stickpng.com/images/58481842cef1014c0b5e49a2.png", source_name: 'r829, contributors', source_url:'https://github.com/simutrans/simutrans/commit/58f5f09567d326563c161cde9787812e3e837920'},
+    {start: '2008-02-29', content: 'Debian<br>packages<br>Simutrans', img_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Openlogo-debianV2.svg/375px-Openlogo-debianV2.svg.png", source_name: 'Debian repositories', source_url: 'https://salsa.debian.org/games-team/simutrans/-/commit/de73630d17ee8b30c26bfbaf6fa4d8d848b92dfd'},
+    {start: '2008-11-14', content: 'Modern logo', img_url: "https://graphics.simutrans.com/albums/userpics/10003/simutrans-logo.png", source_name: 'graphics.simutrans.com', source_url: 'https://graphics.simutrans.com/displayimage.php?album=20&pid=110#top_display_media'},
     {start: '2011-02-14', content: '110.0 with networkmode'},
-    {start: '2012-04', content: '+100k downloads/month', img_url: "https://seeklogo.com/images/S/sourceforge-logo-0372412E49-seeklogo.com.png"},
+    {start: '2012-04', content: '+100k downloads/month', img_url: "https://seeklogo.com/images/S/sourceforge-logo-0372412E49-seeklogo.com.png", source_name: 'SourceForge Download Statistics', source_url: "https://sourceforge.net/projects/simutrans/files/stats/timeline?dates=2012-02-01%20to%202012-05-01&period=monthly"},
     {start: '2012-10-22', content: '112.0 with squirrel script support'},
-    {start: '2015-04', content: 'Project of<br>the Month', img_url: "https://seeklogo.com/images/S/sourceforge-logo-0372412E49-seeklogo.com.png"},
-    {start: '2016-05-24', content: 'Steam<br>Release', img_url: "https://upload.wikimedia.org/wikipedia/commons/8/83/Steam_icon_logo.svg"},
-    {start: '2022-01-14', content: 'Scenario tutorials included<br>in pak64 and pak128'},
-    {start: '2022-05-26', content: 'Play Store<br>Release', img_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Google_Play_Arrow_logo.svg/512px-Google_Play_Arrow_logo.svg.png"},
+    {start: '2015-04', content: 'Project of<br>the Month', img_url: "https://seeklogo.com/images/S/sourceforge-logo-0372412E49-seeklogo.com.png", source_name: 'Sourceforge', source_url: "https://sourceforge.net/blog/april-2015-community-choice-project-of-the-month-simutrans/"},
+    {start: '2016-05-24', content: 'Steam<br>Release', img_url: "https://upload.wikimedia.org/wikipedia/commons/8/83/Steam_icon_logo.svg", source_name: 'Steam', source_url: "https://store.steampowered.com/app/434520/Simutrans/"},
+    {start: '2022-01-14', content: 'Scenario tutorials included<br>in pak64 and pak128', source_name: 'GitHub', source_url: 'https://github.com/simutrans/pak128/commit/a0f3da116308ad4597bc54291f1b674c642b40d0'},
+    {start: '2022-06-04', content: 'Play Store<br>Release', img_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Google_Play_Arrow_logo.svg/512px-Google_Play_Arrow_logo.svg.png", source_name: 'Simutrans International Forum', source_url: "https://forum.simutrans.com/index.php?msg=200481"},
     //{start: '2022-06', content: 'Simutrans has been in development for 25 years!'},
   ]
   short_events.forEach((event) => events.add([{...event, group: 'standard', subgroup: 'milestone', className: 'milestone'}]));
@@ -37,17 +37,17 @@ const add_standardmilestones = (events) => {
 // List of contributors events
 const add_standard_contributors = (events) => {
   const short_events = [
-    {start: '2001-01', content: "prissi discovers simutrans"},
+    {start: '2001-05', content: "prissi discovers simutrans", source_name: 'Simutrans International Forum', source_url: "https://forum.simutrans.com/index.php?msg=198007"},
     {start: '2003-11-12', content: "Hsiegeln joins"},
-    {start: '2004-11-27', content: "prissi joins"},
+    {start: '2004-11-27', content: "prissi joins", source_name: 'Simutrans history.txt', source_url: "https://github.com/simutrans/simutrans/blob/master/simutrans/history.txt"},
     {start: '2006-09-02', content: "kierongreen joins"},
-    {start: '2009-07-29', content: "Ters joins"},
-    {start: '2010-02-04', content: "TurfIt joins"},
-    {start: '2011-09-23', content: "YonaTYT joins", img_url: "https://www.mediafire.com/convkey/807c/aec9av4dc5uicnd6g.jpg"},
-    {start: '2013-03-25', content: "Flemmbrav joins", img_url: "https://forum.simutrans.com/custom_avatar/avatar_10123_1543441188.png"},
-    {start: '2015-12-08', content: "HaydenRead joins"},
-    {start: '2019-06-15', content: "128na starts working on<br>the Simutrans Addon Portal", img_url: "https://avatars.githubusercontent.com/u/15730241?s=40&v=4"},
-    {start: '2020-10-09', content: "Roboron takes over<br> Simutrans on Steam", img_url: "https://forum.simutrans.com/custom_avatar/avatar_11603_1533905631.png"},
+    {start: '2009-09-29', content: "Ters joins", source_name: 'Simutrans International Forum', source_url: "https://forum.simutrans.com/index.php?action=profile;u=5141"},
+    {start: '2010-02-04', content: "TurfIt joins", source_name: 'Simutrans International Forum', source_url: "https://forum.simutrans.com/index.php?action=profile;u=5633"},
+    {start: '2011-09-23', content: "YonaTYT joins", img_url: "https://www.mediafire.com/convkey/807c/aec9av4dc5uicnd6g.jpg", source_name: 'Simutrans International Forum', source_url: "https://forum.simutrans.com/index.php?action=profile;u=8727"},
+    {start: '2013-03-25', content: "Flemmbrav joins", img_url: "https://forum.simutrans.com/custom_avatar/avatar_10123_1543441188.png", source_name: 'Simutrans International Forum', source_url: "https://forum.simutrans.com/index.php?msg=198007"},
+    {start: '2015-12-08', content: "HaydenRead joins", source_name: 'Simutrans International Forum', source_url: "https://forum.simutrans.com/index.php?action=profile;u=11150"},
+    {start: '2019-06-15', content: "128na starts working on<br>the Simutrans Addon Portal", img_url: "https://avatars.githubusercontent.com/u/15730241?s=40&v=4", source_name: 'GitHub', source_url: "https://github.com/128na/simutrans-portal/commit/01a9ceabeb4de49ff9548f132545205806f1c5ea"},
+    {start: '2020-10-09', content: "Roboron takes over<br> Simutrans on Steam", img_url: "https://forum.simutrans.com/custom_avatar/avatar_11603_1533905631.png", source_name: 'International Simutrans Forum', source_url: "https://forum.simutrans.com/index.php/topic,20384.0.html"},
   ]
   short_events.forEach((event) => events.add([{...event, group: 'standard', subgroup: 'contributor', className:'contributor'}]));
 }
@@ -71,7 +71,7 @@ const add_standard_paksets = (events) => {
     {start: '2006-06-23', content: 'pak128.Japan start'},
     {start: '2007-04-10', content: 'pak128.Britain start'},
     {start: '2008-03-18', content: 'pak96.comic start'},
-    {start: '2009-02-14', content: 'Pak192.Comic start'},
+    {start: '2009-02-14', content: 'Pak192.Comic start', source_name: 'International Simutrans Forum', source_url: 'https://forum.simutrans.com/index.php/topic,18775.0.html'},
     {start: '2018-12-28', content: 'PAK128.German 1.0'},
     {start: '2020-10-21', content: 'PAK128.German 2.0'},
   ]

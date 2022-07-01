@@ -25,8 +25,12 @@ const options = {
   editable: false,
   stack: true,
   verticalScroll: true,
-  height: '80vh',
-  maxHeight: '80vh',
+  height: '85vh',
+  template: function (item) {
+      return item.img_url
+        ? "<img class='timeline-image' src='" + item.img_url + "'/><br>" + item.content 
+        : item.content;
+  },
 };
 
 // Create a Timeline
@@ -48,7 +52,7 @@ const toggleSubgroupVisibility = (subgroup) => {
 }
 
 /*
- * Showing source information
+ * Showing details
  */
 timeline.on('select', function (properties) {
   const previous_details = document.getElementById('details');
@@ -57,7 +61,8 @@ timeline.on('select', function (properties) {
   if ( selected_event.content !== undefined) {
     const details = document.createElement('div');
     details.id = 'details';
-    details.innerHTML = '<center><h3>Event Details</h3></center>';
+    details.classList.add(selected_event.className);
+    details.innerHTML += '<center><h3>Event Details</h3></center>';
     details.innerHTML += 'Content: ' + selected_event.content.replace(/<img[^>]*>/g,"").replace(/<br[^>]*>/g, ' ') + '</br>';
     details.innerHTML += 'Date: ' + selected_event.start + '</br>';
 
@@ -69,6 +74,7 @@ timeline.on('select', function (properties) {
       details.innerHTML += 'Source: ' + selected_event.source_name; 
     }
 
+    details.innerHTML += selected_event.img_url ? "<center><img src=" + selected_event.img_url + "></center>" : '';
     document.getElementById('timeline').appendChild(details)
   }
 });

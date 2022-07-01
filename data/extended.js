@@ -13,9 +13,9 @@ const add_extended_timeline_data = (events) => {
 // List of milestone events
 const add_extendedmilestones = (events) => {
   const short_events = [
-    {start: '2009-01-21', content: 'Simutrans Experimental is born'},
+    {start: '2009-01-21', content: 'Simutrans Experimental is born', source_name: 'Simutrans International Forum', source_url: 'https://forum.simutrans.com/index.php?msg=12596'},
     {start: '2017-01', content: 'Simutrans Experimental is<br>renamed to Simutrans Extended'},
-    {start: '2022-04-03', content: 'Elevated way supports'},
+    {start: '2022-04-03', content: 'Elevated way supports', source_name: 'Simutrans International Forum', source_url: 'https://forum.simutrans.com/index.php/topic,21519.0.html'},
   ]
   short_events.forEach((event) => events.add([{...event, group: 'extended', subgroup: 'milestone', className: 'milestone'}]));
 }
@@ -23,10 +23,10 @@ const add_extendedmilestones = (events) => {
 // List of contributors events
 const add_extended_contributors = (events) => {
   const short_events = [
-    {start: '2008-12-04', content: 'Jamespetts starts contributing', img_url: "https://forum.simutrans.com/custom_avatar/avatar_53_1470856190.jpg"},
-	{start: '2017-07-01', content: 'Phystam joins'},
-	{start: '2018-04-28', content: 'Ranran joins', img_url: "https://forum.simutrans.com/custom_avatar/avatar_11892_1648587872.png"},
-	{start: '2021-04-30', content: 'PJMack joins'},
+    {start: '2008-12-04', content: 'Jamespetts starts contributing', img_url: "https://forum.simutrans.com/custom_avatar/avatar_53_1470856190.jpg", source_name: 'International Simutrans Forum', source_url: 'https://forum.simutrans.com/index.php/topic,932.msg8447.html#msg8447'},
+	{start: '2017-07-01', content: 'Phystam joins', source_name: 'International Simutrans Forum', source_url: 'https://forum.simutrans.com/index.php?action=profile;u=11672'},
+	{start: '2018-04-28', content: 'Ranran joins', img_url: "https://forum.simutrans.com/custom_avatar/avatar_11892_1648587872.png", source_name: 'International Simutrans Forum', source_url: 'https://forum.simutrans.com/index.php?action=profile;u=11892'},
+	{start: '2021-04-30', content: 'PJMack joins', source_name: 'International Simutrans Forum', source_url: 'https://forum.simutrans.com/index.php?action=profile;u=12502'},
   ]
   short_events.forEach((event) => events.add([{...event, group: 'extended', subgroup: 'contributor', className:'contributor'}]));
 }
