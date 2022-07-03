@@ -14,6 +14,7 @@ const add_extended_timeline_data = (events) => {
 const add_extendedmilestones = (events) => {
   const short_events = [
     {start: '2009-01-21', content: 'Simutrans Experimental is born', source_name: 'Simutrans International Forum', source_url: 'https://forum.simutrans.com/index.php?msg=12596'},
+    {start: '2011-09-17', content: 'Simutrans Experimental board', source_name: 'Simutrans Blog', source_url: 'https://blog.simutrans.com/?p=1678'},
     {start: '2017-01', content: 'Simutrans Experimental is<br>renamed to Simutrans Extended'},
     {start: '2022-04-03', content: 'Elevated way supports', source_name: 'Simutrans International Forum', source_url: 'https://forum.simutrans.com/index.php/topic,21519.0.html'},
   ]
@@ -52,6 +53,7 @@ const add_extended_paksets = (events) => {
 const add_extended_releases = (events) => {
   const short_events = [
     {start: '2013-06-10', content: '11.00'},
+    {start: '2011-09-18', content: '10.00', source_name: "International Simutrans Forum", source_url: "https://forum.simutrans.com/index.php?topic=8056.msg76436"},
   ]
   short_events.forEach((event) => events.add([{...event, group: 'extended', subgroup: 'release', className: 'release'}]));
 }
